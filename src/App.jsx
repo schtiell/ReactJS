@@ -1,5 +1,7 @@
 //importación de librerias y compornentes
+//Por convención ES6 los componentes se importan despues de las librerias en orden alfabético y antes de los css
 import React from 'react'
+import Button from './components/Button'
 import Result from './components/Result'
 import './App.css'
 
@@ -14,7 +16,7 @@ const App = () => {
         <main className="react-calculator"> 
             <Result valuer={0} />
             <div className="number">
-                <button>1</button>
+                <Button type={1} text="1" />
                 <button>2</button>
                 <button>3</button>
                 <button>4</button>

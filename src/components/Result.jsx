@@ -2,20 +2,17 @@
 import React from 'react'
 import Proptypes from 'prop-types'
 
-//Arrow Function del componente o construcción del componente funcional
-
 //Object Destructuring o destructuración de objetos
-/*
-const Result = (props) => {
+/*const Result = (props) => {
     const { value } = props
     return(
         <div className="result">
             <span> {value} </span>
         </div>
     )
-}
-*/
+}*/
 
+//Arrow Function del componente o construcción del componente funcional
 //Destructuring permite un código mucho mas reducido y limpio
 const Result = ({ value }) => {
     console.log('Renderizado del componente Result.jsx', value)
