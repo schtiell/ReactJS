@@ -2,11 +2,25 @@
 import React from 'react'
 
 //Arrow Function del componente o construcción del componente funcional
-const Result = () => {
-    console.log('Renderizado del componente Result.jsx')
+
+//Object Destructuring o destructuración de objetos
+/*
+const Result = (props) => {
+    const { value } = props
     return(
         <div className="result">
-            <span> 0 </span>
+            <span> {value} </span>
+        </div>
+    )
+}
+*/
+
+//Destructuring permite un código mucho mas reducido y limpio
+const Result = ({ value, value2}) => {
+    console.log('Renderizado del componente Result.jsx', value)
+    return(
+        <div className="result">
+            <span> {value} </span>
         </div>
     )
 } 

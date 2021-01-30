@@ -12,7 +12,7 @@ const App = () => {
     console.log('Renderizado del primer componente App.jsx')
     return (
         <main className="react-calculator"> 
-            <Result />
+            <Result value={0} />
             <div className="number">
                 <button>1</button>
                 <button>2</button>
