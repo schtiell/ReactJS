@@ -31,5 +31,10 @@ Result.propTypes = {
     value: Proptypes.number.isRequired
 }
 
+//Estableciendo valores por default cuando la propiedad no es enviada al componente desde el lugar donde es llamado
+Result.defaultProps = {
+    value: 100
+}
+
 //Exportación del componente
 export default Result
