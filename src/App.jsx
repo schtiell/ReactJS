@@ -1,5 +1,6 @@
 //importación de librerias y compornentes
 import React from 'react'
+import Result from './components/Result'
 import './App.css'
 
 //función del componente Arrow Function o funcion flecha son el standar de ECMASCRIPT 6
@@ -11,7 +12,7 @@ const App = () => {
     console.log('Renderizado del primer componente App.jsx')
     return (
         <main className="react-calculator"> 
-            <div className="result"></div>
+            <Result />
             <div className="number">
                 <button>1</button>
                 <button>2</button>
