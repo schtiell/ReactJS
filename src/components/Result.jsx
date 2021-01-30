@@ -1,5 +1,6 @@
 //importación de librerias
 import React from 'react'
+import Proptypes from 'prop-types'
 
 //Arrow Function del componente o construcción del componente funcional
 
@@ -16,7 +17,7 @@ const Result = (props) => {
 */
 
 //Destructuring permite un código mucho mas reducido y limpio
-const Result = ({ value, value2}) => {
+const Result = ({ value }) => {
     console.log('Renderizado del componente Result.jsx', value)
     return(
         <div className="result">
@@ -24,6 +25,11 @@ const Result = ({ value, value2}) => {
         </div>
     )
 } 
+
+//Validación del tipo de dato de la propiedad y que sea requerido forzosamente
+Result.propTypes = {
+    value: Proptypes.number.isRequired
+}
 
 //Exportación del componente
 export default Result
